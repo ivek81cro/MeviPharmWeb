@@ -8,35 +8,41 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-    <header>
-        
-    </header>
-    <div class="container-fluid bg-image">
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white navbar-border-bottom box-shadow mb-3 bg-transparent">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <partial name="_LoginPartial" />
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
-                    </ul>
+    <div class="container-fluid main-container bg-image">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg p-sm-2 navbar-light bg-white mb-3 bg-transparent">
+                <div class="container navbar-container-custom">
+                    <button class="navbar-toggler navbar-toggler-custom" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        <img src="~/img/logoTranspBg.png" class="img img-logo" />
+                    </button>
+                    <div class="navbar-collapse navbar-collapse-custom collapse d-lg-inline-flex flex-sm-row-reverse">
+                        <!-- <partial name="_LoginPartial" /> -->
+                        <img src="~/img/logoTranspBg.png" class="img img-logo d-none d-lg-block" />
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">O&nbsp;Nama</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Proizvodi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Kontakt</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+            </nav>
+            <main role="main" class="pb-3 container">
+                @RenderBody()
+            </main>
+        </div>
     </div>
-
-    <footer class="border-top footer text-muted">
+    <footer class="footer footer-custom text-muted">
         <div class="container">
             &copy; 2020 - MeviPharm - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
