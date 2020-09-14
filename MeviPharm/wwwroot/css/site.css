@@ -66,21 +66,36 @@ body {
 }
 
 .footer {
-    position: absolute;
     bottom: 0;
     width: 100%;
     white-space: nowrap;
-    line-height: 60px; /* Vertically center the text there */
+    background-color: #fff;
+    position: relative;
+}
+
+.footer-custom p {
+    line-height: 10px;
+    font-family: Verdana;
+    font-size: 0.8em;
+    margin-right: 7%;
+}
+
+.contact-info {
+    color: #9ac75e;
+}
+
+.footer-logo {
+    margin-top: 1%;
 }
 
 .bg-image {
     background-image: url("../img/naslovna-bg.jpg");
     background-size: cover;
     background-position: right bottom;
+    min-height: 1000px;
 }
 
 .main-container {
-    min-height: 90vh;
 }
 
 .navbar-container-custom {
@@ -105,7 +120,4 @@ body {
     font-family: Verdana;
     font-size: 1.1em;
     margin-right: 7%;
-}
-
-.footer-custom {
 }
