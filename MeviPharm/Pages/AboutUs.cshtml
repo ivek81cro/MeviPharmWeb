@@ -1,0 +1,39 @@
+﻿@page
+@model AboutUsModel
+@{
+    ViewData["Title"] = "About us";
+}
+
+<div class="container-fluid p-0 m-0">
+    <img src="~/img/aboutBg.png" class="img-fluid img-about w-100 p-0" />
+</div>
+<div class="text-center container">
+    <div class="col-12">
+        <div class="green-box green-box-about green-box-md green-box-lg green-box-xl">
+            <p>
+                Kvaliteta, povjerenje i ljudi za<br />
+                nas su ključni preduvjeti za<br />
+                uspjeh.
+            </p>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="transparent-box transparent-box-about transparent-box-md transparent-box-lg">
+            <p>
+                Mi smo mladi i dinamičan tim s drugačijim pogledom na razvijanje<br />
+                novih proizvoda, ideja i pristupa marketingu.<br />
+                <br />
+                Sve što radimo, radimo s entuzijazmom i strasti.
+            </p>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $('.navbar-container-custom').removeClass('navbar-container-custom').addClass('no-border-nav');
+            $('.main-container').removeClass('bg-image').addClass('bg-about');
+        });
+    </script>
+}

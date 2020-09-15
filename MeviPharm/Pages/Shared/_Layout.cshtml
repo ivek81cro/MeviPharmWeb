@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-    <div class="container-fluid main-container bg-image">
+    <div class="container-fluid main-container bg-image p-0 m-0">
         <div class="container">
             <nav class="navbar navbar-expand-lg p-sm-2 navbar-light bg-white mb-3 bg-transparent">
                 <div class="container navbar-container-custom">
@@ -25,7 +25,7 @@
                                 <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">O&nbsp;Nama</a>
+                                <a class="nav-link text-dark" asp-area="" asp-page="/AboutUs">O&nbsp;Nama</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Proizvodi</a>
@@ -37,10 +37,10 @@
                     </div>
                 </div>
             </nav>
-            <main role="main" class="m-0 p-0 container">
-                @RenderBody()
-            </main>
         </div>
+        <main role="main" class="m-0 p-0">
+            @RenderBody()
+        </main>
     </div>
     <footer class="footer footer-custom">
         <div class="container p-0">
@@ -61,7 +61,7 @@
             </div>
         </div>
         <div class="container align-content-center">
-            
+
         </div>
     </footer>
 

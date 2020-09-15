@@ -4,9 +4,9 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
+<div class="text-center container">
     <div class="col-12">
-        <div class="green-box green-box-md green-box-lg green-box-xl">
+        <div class="green-box green-box-index green-box-md green-box-lg green-box-xl">
             <p>
                 MEVI Pharm ima misiju proizvodnje inovativnih<br />
                 dodataka prehrani, korištenjem visokokvalitetnih sirovina s<br />
@@ -15,7 +15,7 @@
         </div>
     </div>
     <div class="col-12">
-        <div class="transparent-box transparent-box-md transparent-box-lg">
+        <div class="transparent-box transparent-box-index transparent-box-md transparent-box-lg">
             <p>
                 Vođeni kreativnošću i novim<br />
                 idejama, cilj nam je napraviti<br />
@@ -24,3 +24,12 @@
         </div>
     </div>
 </div>
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $('.no-border-nav').removeClass('navbar-container-custom').addClass('navbar-container-custom');
+            $('.main-container').removeClass('no-bg-image').addClass('bg-image');
+        });
+    </script>
+}
