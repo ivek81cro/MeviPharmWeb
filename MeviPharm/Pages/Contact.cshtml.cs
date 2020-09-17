@@ -27,14 +27,19 @@ namespace MeviPharm.Pages
         public void OnGet()
         {
         }
-        
-        public async Task<IActionResult> Contact(ContactModel item)
+
+        public async Task<IActionResult> OnPostAsync()
         {
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
+            
             if (ModelState.IsValid)
             {
-                await _emailSender.SendEmailAsync("info@elabdesign.net",
+                await _emailSender.SendEmailAsync("info@mevipharm.hr",
                     "Message from contact form",
-                    $"<h3>Name: {item.Name}</h3><a href='{item.Email}'>Mail: {item.Email}</a><p>Message: {item.Message}</p>");
+                    $"<h3>Name: {Name}</h3><a href='{Email}'>Mail: {Email}</a><p>Message: {Message}</p>");
 
                 return Redirect("ContactSuccess");
             }
