@@ -1,0 +1,68 @@
+﻿@page
+@model ContactModel
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<div class="container-fluid p-0 m-0">
+    <img src="~/img/contactBg.png" class="img-fluid img-about w-100 p-0" />
+</div>
+<div class="text-center container">
+    <div class="col-12">
+        <div class="green-box green-box-about green-box-md green-box-lg green-box-xl">
+            <p>
+                Kontakt
+            </p>
+        </div>
+    </div>
+    <div class="row col-12">
+        <div class="card-body col-12 col-md-8">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <i class="fa fa-envelope"></i> Contact us.
+                </div>
+                <div class="card-body">
+                    <form asp-action="Contact" method="post">
+                        <div class="form-group">
+                            <label asp-for="Name">Name:</label>
+                            <input type="text" class="form-control" placeholder="Enter name" required asp-for="Name" />
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Email">Email address:</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required asp-for="Email" />
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Message">Message:</label>
+                            <textarea asp-for="Message" class="form-control" id="message" rows="6" required></textarea>
+                        </div>
+                        <div class="mx-auto">
+                            <input type="submit" class="btn btn-primary text-right" value="Submit" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="card-body col-12 col-md-4">
+            <div class="card bg-light mb-3">
+                <div class="card-header bg-success text-white text-uppercase"><i class="fa fa-home"></i> Address</div>
+                <div class="card-body">
+                    <p>Hrgovići 47</p>
+                    <p>10000 Zagreb</p>
+                    <p>Croatia</p>
+                    <p>Email : info@mevipharm.hr</p>
+                    <p>Tel. +385 99 80 37 132</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $('.navbar-container-custom').removeClass('navbar-container-custom').addClass('no-border-nav');
+            $('.main-container').removeClass('bg-image').addClass('bg-about');
+        });
+    </script>
+}

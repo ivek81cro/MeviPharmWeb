@@ -287,3 +287,19 @@ body {
         margin-bottom: 2%;
     }
 }
+
+/* Contact page
+-------------------------------------------------- */
+
+@media only screen and (min-width: 992px) {
+    .green-box-about {
+        padding: 7% 5% 7% 5%;
+        margin-top: 15%;
+        margin-left: 10%;
+        width: 25%;
+    }
+
+        .green-box-about p {
+            line-height: 1.5em;
+        }
+}
