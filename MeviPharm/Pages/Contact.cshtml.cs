@@ -27,7 +27,7 @@ namespace MeviPharm.Pages
         public void OnGet()
         {
         }
-
+        
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)
@@ -39,7 +39,8 @@ namespace MeviPharm.Pages
             {
                 await _emailSender.SendEmailAsync("info@mevipharm.hr",
                     "Message from contact form",
-                    $"<h3>Name: {Name}</h3><a href='{Email}'>Mail: {Email}</a><p>Message: {Message}</p>");
+                    $"<h3>Name: {Request.Form["Name"]}</h3><a href='{Request.Form["Email"]}'>Mail: " +
+                    $"{Request.Form["Email"]}</a><p>Message: {Request.Form["Message"]}</p>");
 
                 return Redirect("ContactSuccess");
             }
