@@ -303,3 +303,23 @@ body {
             line-height: 1.5em;
         }
 }
+
+/* Products page
+-------------------------------------------------- */
+
+.product-logo {
+    margin-top: -32%;
+    max-height: 50px;
+}
+
+.product-name {
+    font-size: 3vw;
+    margin-right:-15%;
+    height:5%;
+}
+
+.product-type {
+    color: #fff;
+    font-size: 2vw;
+    margin-left: 15%;
+}
