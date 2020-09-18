@@ -292,14 +292,14 @@ body {
 -------------------------------------------------- */
 
 @media only screen and (min-width: 992px) {
-    .green-box-about {
+    .green-box-contact {
         padding: 7% 5% 7% 5%;
         margin-top: 15%;
         margin-left: 10%;
         width: 25%;
     }
 
-        .green-box-about p {
+        .green-box-contact p {
             line-height: 1.5em;
         }
 }
