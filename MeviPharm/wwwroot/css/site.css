@@ -307,26 +307,65 @@ body {
 /* Products page
 -------------------------------------------------- */
 
+.product-image {
+    border: 3px solid #8ec641;
+}
+
+@media only screen and (min-width: 768px) {
+    .product-image img {
+        margin-left: 15%;
+    }
+}
+
 .product-specs {
-    margin-top: -50%;
-    max-height: 2.5vw;
-    color: #8cc63e;
-    font-size: 1.2vw;
-}
-
-.product-logo {
-    margin-top: -33%;
-    max-height: 3vw;
-}
-
-.product-name {
-    font-size: 3vw;
-    margin-right:-15%;
-    height:5%;
-}
-
-.product-type {
+    background-color: #8ec641;
     color: #fff;
-    font-size: 2vw;
-    margin-left: 15%;
+    height: 3.5vw;
+    margin-top: 10%;
+    margin-left: -30%;
+    padding: 1%;
+    width: 120%;
+    text-align: center;
+    font-size: 1.1vw;
 }
+
+    .product-specs p {
+        margin-top: 3%;
+    }
+
+.product-title {
+    background-color: #fff;
+    height: 25%;
+    margin-top: 10%;
+    margin-left: -40%;
+    padding: 1%;
+    width: 120%;
+    text-align: left;
+    visibility: visible;
+}
+
+.onvit {
+    font-size: 3vw;
+    font-weight: 500;
+}
+
+.immune {
+    font-size: 1.5vw;
+    font-weight: 400;
+    color: #8ec641;
+    margin-left: 7%;
+}
+
+.product-education {
+    color: #fff;
+    background-color: #8ec641;
+    border-radius: 0.5vw;
+    height: 3.5vw;
+    text-align: center;
+    width: 65%;
+}
+
+    .product-education p {
+        margin-top: 25%;
+        font-size: 1.1vw;
+    }
