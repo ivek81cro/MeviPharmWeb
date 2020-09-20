@@ -7,11 +7,6 @@ a.navbar-brand {
     word-break: break-all;
 }
 
-/* Provide sufficient contrast against white background */
-a {
-    color: #0366d6;
-}
-
 .btn-primary {
     color: #fff;
     background-color: #1b6ec2;
@@ -295,6 +290,13 @@ body {
 /* Contact page
 -------------------------------------------------- */
 
+.green-box-contact {
+    padding: 2%;
+    margin-top: 5%;
+    margin: auto;
+    width: 50%;
+}
+
 @media only screen and (min-width: 992px) {
     .green-box-contact {
         padding: 7% 5% 7% 5%;
@@ -312,6 +314,11 @@ body {
 -------------------------------------------------- */
 /* Top section
 --------------------- */
+
+.prod a, a:visited, a:hover {
+    text-decoration: none;
+    color: #fff;
+}
 
 .prod-img {
     border: 3px solid #9ac75e;
@@ -367,7 +374,7 @@ body {
 
 .prod-immune {
     color: #9ac75e;
-    font-size: 1em;
+    font-size: 1.3em;
     margin-left: 3%;
 }
 
@@ -399,13 +406,18 @@ body {
 
 .prod-edu {
     height: 25%;
-    font-weight: 600;
+    font-weight: 800;
+    padding-top: 1%;
+    width: 70%;
+    margin: auto;
+    border-radius: 1em;
+    border: 1px solid #98bce2;
 }
 
 @media only screen and (min-width: 992px) {
     .prod-edu {
         height: 12%;
-        width: 60%;
+        width: 65%;
         margin: auto;
         font-weight: 600;
         padding-top: 2.7%;
@@ -415,7 +427,7 @@ body {
 /* Second section
 --------------------- */
 
-.prod-second{
+.prod-second {
     font-weight: 600;
     margin: auto;
 }
@@ -434,4 +446,58 @@ body {
 .prod-fourth {
     font-weight: 600;
     margin: auto;
+}
+
+/* Education page
+-------------------------------------------------- */
+
+.edu-green-box {
+    width: 93%;
+    height: 50%;
+    color: #fff;
+    padding: 4% 2% 4% 2%;
+    font-weight: 600;
+    background-color: #9ac75e;
+    margin: auto;
+    margin-top: 1%;
+}
+
+@media only screen and (min-width: 992px) {
+    .edu-green-box {
+        width: 30%;
+        margin-top: -16%;
+        margin-left: 60%;
+    }
+}
+
+.edu-title {
+    border: 1px solid #000;
+    margin-top: 2%;
+    padding-top: 3%;
+    margin-bottom: 2%;
+}
+
+@media only screen and (min-width: 992px) {
+    .edu-title {
+        margin-top: -5%;
+    }
+}
+
+.edu-article .edu-green-box {
+    margin-top: 5%;
+    margin-left: auto;
+    margin-bottom: 5%;
+}
+
+.edu-green-bottom {
+    width: 100%;
+    font-size: 0.8em;
+    background-color: #9ac75e;
+    color: #fff;
+}
+
+.edu-white-bottom {
+    width: 100%;
+    border: 1px solid #000;
+    padding-top: 5%;
 }
