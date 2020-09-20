@@ -310,6 +310,8 @@ body {
 
 /* Products page
 -------------------------------------------------- */
+/* Top section
+--------------------- */
 
 .prod-img {
     border: 3px solid #9ac75e;
@@ -408,4 +410,28 @@ body {
         font-weight: 600;
         padding-top: 2.7%;
     }
+}
+
+/* Second section
+--------------------- */
+
+.prod-second{
+    font-weight: 600;
+    margin: auto;
+}
+
+.prod-p-green {
+    color: #9ac75e;
+    font-size: 1.2em;
+}
+
+/* Third section
+--------------------- */
+
+/* Fourth section
+--------------------- */
+
+.prod-fourth {
+    font-weight: 600;
+    margin: auto;
 }
