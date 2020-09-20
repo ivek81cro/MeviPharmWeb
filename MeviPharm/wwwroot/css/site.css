@@ -145,6 +145,11 @@ body {
 
 /* Green-box
 -------------------------------------------------- */
+
+.green-bg {
+    background-color: #9ac75e;
+}
+
 .green-box p {
     font-family: Verdana;
     font-size: 1em;
@@ -153,7 +158,6 @@ body {
 }
 
 .green-box {
-    background-color: #9ac75e;
     height: 50%;
     width: 50%;
     padding: 3%;
@@ -307,65 +311,101 @@ body {
 /* Products page
 -------------------------------------------------- */
 
-.product-image {
-    border: 3px solid #8ec641;
+.prod-img {
+    border: 3px solid #9ac75e;
+    width: 100%;
 }
 
-@media only screen and (min-width: 768px) {
-    .product-image img {
+    .prod-img img {
+        margin-left: 0% auto;
+    }
+
+@media only screen and (min-width: 992px) {
+    .prod-img img {
         margin-left: 15%;
     }
 }
 
-.product-specs {
-    background-color: #8ec641;
-    color: #fff;
-    height: 3.5vw;
-    margin-top: 10%;
-    margin-left: -30%;
-    padding: 1%;
-    width: 120%;
-    text-align: center;
-    font-size: 1.1vw;
+.prod-specs {
+    margin-top: 2%;
+    margin-left: auto;
+    width: 100%;
+    height: 30%;
+    padding-top: 2%;
+    font-weight: 600;
 }
 
-    .product-specs p {
-        margin-top: 3%;
+@media only screen and (min-width: 992px) {
+    .prod-specs {
+        margin-top: 20%;
+        margin-left: -35%;
+        width: 130%;
+        height: 15%;
+        padding-top: 5%;
+        font-weight: 600;
+    }
+}
+
+.prod-name {
+    margin-top: 2%;
+    height: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+.prod-name-box {
+    margin-top: 0%;
+}
+
+
+.prod-onvit {
+    font-weight: 600;
+    font-size: 2em;
+}
+
+.prod-immune {
+    color: #9ac75e;
+    font-size: 1em;
+    margin-left: 3%;
+}
+
+@media only screen and (min-width: 992px) {
+    .prod-name {
+        background-color: #fff;
+        height: 6em;
+        margin-left: -45%;
+        width: 130%;
+        margin-bottom: 20%;
     }
 
-.product-title {
-    background-color: #fff;
+    .prod-name-box {
+        margin-top: 10%;
+        text-align: left;
+    }
+
+    .prod-onvit {
+        font-weight: 600;
+        font-size: 4em;
+    }
+
+    .prod-immune {
+        color: #9ac75e;
+        font-size: 2em;
+        margin-left: 3%;
+    }
+}
+
+.prod-edu {
     height: 25%;
-    margin-top: 10%;
-    margin-left: -40%;
-    padding: 1%;
-    width: 120%;
-    text-align: left;
-    visibility: visible;
+    font-weight: 600;
 }
 
-.onvit {
-    font-size: 3vw;
-    font-weight: 500;
-}
-
-.immune {
-    font-size: 1.5vw;
-    font-weight: 400;
-    color: #8ec641;
-    margin-left: 7%;
-}
-
-.product-education {
-    color: #fff;
-    background-color: #8ec641;
-    border-radius: 0.5vw;
-    height: 3.5vw;
-    text-align: center;
-    width: 65%;
-}
-
-    .product-education p {
-        margin-top: 25%;
-        font-size: 1.1vw;
+@media only screen and (min-width: 992px) {
+    .prod-edu {
+        height: 12%;
+        width: 60%;
+        margin: auto;
+        font-weight: 600;
+        padding-top: 2.7%;
     }
+}

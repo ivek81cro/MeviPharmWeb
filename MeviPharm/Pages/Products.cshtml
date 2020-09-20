@@ -5,34 +5,36 @@
 }
 
 @{
-//TODO Redesign to one column md or less, text becomes too small to read, split main div's in half
+//TODO Design rest of page
 }
-<div class="container">
-    <div class="row col-12">        
-        <div class="product-image col-12 col-lg-7 p-0">
+<div class="container mt-5">
+    <div class="row col-12 w-100">        
+        <div class="col-12 col-lg-7 align-content-center prod-img w-100 m-0 p-0">
             <img src="~/img/bottle.png" class="img-fluid" />
         </div>
-        <div class="product-logo col-12 col-lg-4">
-            <div class="product-specs product-specs-sm">
+        <div class="col-12 col-lg-4 text-center align-middle">
+            <div class="prod-specs green-bg text-light">
                 <p>1500&nbsp;IU&nbsp;Vitamin&nbsp;D3&nbsp;+&nbsp;vitamini&nbsp;i&nbsp;minerali</p>
             </div>
-            <div class="product-title">
-                <span class="onvit">On&nbsp;Vit</span><span class="immune">immune&nbsp;support</span>
+            <div class="prod-name">
+                <div class="prod-name-box">
+                    <span class="prod-onvit">On&nbsp;Vit</span><span class="prod-immune">immune&nbsp;support</span>
+                </div>
             </div>
-            <div class="product-education">
+            <div class="prod-edu green-bg text-light">
                 <p>Edukacijski&nbsp;članak</p>
             </div>
         </div>
     </div>
-    <div class="row col-12" style="height:500px;">
+    <div class="row col-12" style="height:500px; border:1px solid black">
         @{ //<img src="~/img/productsMiddleDiv.png" class="img-fluid" /> 
         }
     </div>
-    <div class="row col-12" style="height:500px;">
+    <div class="row col-12" style="height:500px; border:1px solid black">
         @{ //<img src="~/img/productsMiddle2Div.png" />
         }
     </div>
-    <div class="row col-12" style="height:500px;">
+    <div class="row col-12" style="height:500px;  border:1px solid black">
         @{ //<img src="~/img/productsBottomDiv.png" />
         }
     </div>
