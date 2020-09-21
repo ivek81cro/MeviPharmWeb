@@ -321,7 +321,9 @@ body {
 
 .prod a, a:visited, a:hover {
     text-decoration: none;
+    font-weight: 600;
     color: #000;
+    cursor: pointer;
 }
 
 .prod-img {
@@ -473,6 +475,68 @@ body {
 
 /* Education page
 -------------------------------------------------- */
+
+.edu-naslovna-img {
+    margin-left: 0;
+    width:100%;
+}
+
+.edu-number {
+    font-size: 3em;
+    font-family: Arial;
+    float: left;
+    margin-right: 0%;
+}
+
+.edu-behind-number {
+    font-size: 1em;
+    float: left;
+    margin-top: 4%;
+    margin-left: 2%;
+}
+
+.edu-green-box-4 {
+    width: 100%;
+    height: 50%;
+    color: #fff;
+    padding: 4% 0% 4% 2%;
+    font-weight: 600;
+    background-color: #9ac75e;
+    margin-top: 15%;
+    z-index: 1;
+}
+
+@media only screen and (min-width: 992px) {
+    .edu-naslovna-img {
+        margin-left: 25%;
+        margin-top: -40%;
+    }
+
+    .edu-number {
+        font-size: 8em;
+        font-family: Arial;
+        float: left;
+        margin-right: 2%;
+    }
+
+    .edu-behind-number {
+        font-size: 1.2em;
+        float: left;
+        margin-top: 20%;
+        margin-left: 5%;
+    }
+
+    .edu-green-box-4 {
+        width: 37%;
+        height: 50%;
+        color: #fff;
+        padding: 4% 0% 4% 2%;
+        font-weight: 600;
+        background-color: #9ac75e;
+        margin-top: 15%;
+        z-index: 1;
+    }
+}
 
 .edu-green-box {
     width: 93%;

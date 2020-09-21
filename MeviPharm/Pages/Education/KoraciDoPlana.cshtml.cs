@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace MeviPharm.Pages.Education
 {
-    public class VaznostVitaminaModel : PageModel
+    public class KoraciDoPlanaModel : PageModel
     {
         public void OnGet()
         {

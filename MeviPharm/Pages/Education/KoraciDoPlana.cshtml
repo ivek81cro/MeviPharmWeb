@@ -1,0 +1,66 @@
+﻿@page
+@model MeviPharm.Pages.Education.KoraciDoPlanaModel
+
+@{
+    ViewData["Title"] = "Važnost mikronutrijenata";
+}
+
+<div class="container">
+    <div class="edu-article p-2 text-justify">
+        <div class="edu-naslovna w-100 col-12 row mb-5 ml-1 mr-1 p-0">
+            <div class="edu-green-box-4 text-left">
+                <div class="edu-number col-1 text-left">4</div>
+                <div class="col-2 w-100"></div>
+                <div class="edu-behind-number col-9 ml-5 text-left">koraka do plana prehrane<br />onkoloških bolesnika</div>
+            </div>
+            <div class="edu-naslovna-img">
+                <img src="~/img/cetiriKoraka.png" class="img-fluid" />
+            </div>
+        </div>
+        <div class="edu-title col-lg-8 col-12">
+            <h3 class="text-left">
+            </h3>
+        </div>
+        <p>
+            Postići dnevne nutritivne potrebe može predstavljati veliki problem onkološkim bolesnicima. Zbog same bolesti, dolazi do smanjenja apetita te
+            povećanih nutritivnih i kalorijskih potreba. Zbog tumorske terapije kao što su zračenje i kemoterapija, dolazi do smanjenja mogućnosti hranjenja kod bolesnika, smanjena im je mogućnost probave hrane te apsorpcija nutrijenata.
+            Nadalje, nuspojave tumorske terapije kao što su povraćanje, proljev te iscrpljenost, mogu smanjiti apetit bolesnika.
+            Bolesnici koji su pothranjeni slabije podnose tumorsku terapiju, nuspojave su izraženije te imaju smanjenu kvalitetu života.
+            Zbog toga je vrlo važno osigurati hranu koja je nutritivno bogata.
+            Održavanjem zdrave i nutritivno potpune prehrane nije samo esencijalno da čini vaše tijelo jakim da mu je lakše boriti se s bolešću, već može biti od pomoći u smanjenju nuspojava tumorske terapije.
+            Koju hranu trebate konzumirati da bi postigli ciljeve? To ovisi o vrsti karcinoma te o vrsti tumorske terapije. Dok bi zdravi izbalansirani jelovnik
+            trebao sadržavati puno voća i povrća, žitarica i proteina, odluku o količini i vrsti hrane te dodacima prehrani, trebali bi donijeti u suradnji s vašim liječnikom i/ili nutricionistom.
+
+            <h4>Kroz 4 koraka do plana prehrane:</h4>
+
+            1.Voće i povrće: konzumiranje voća i povrća, posebno onih koji sadrže velike količine antioksidanasa, pomaže u borbi protiv slobodnih radikala koji mogu oštetiti DNA stanice te mogu biti okidač oboljenja. Na primjer, zeleno lisnato povrće kao što su brokula, cvjetača, kelj i špinat, voće kao što su banane, jagode i naranča te različito bobičasto voće kao što su borovnice, maline i kupine.<br />
+            <br />
+            2.Žitarice: Složeni ugljikohidrati koji se nalaze u žitaricama imaju ulogu u osiguranju energije.<br />
+            <br />
+            3.Proteini: u prehranu je potrebno je uključiti više proteina nego kod zdravih osoba. Proteini imaju ulogu u oporavaku/cijeljenju tkiva i u prevenciji infekcija tijekom tumorske terapije. Preporuka su biljni izvori proteina kao što su grah, grašak i leća te proteini životinjskog porijekla kao što su riba, perad i mliječni proizvodi.<br />
+            <br />
+            4.Hranu koju je potrebno izbjegavati: prženu hranu, roštilj, veliki unos soli i šećera, crveno meso te procesuirano meso kao što su kobasice, slanina,
+            šunka. Također trebali bi izbjegavati konzerviranu hranu i alkoholna pića.<br />
+            <br />
+            Hrana koja pomaže smanjenju nuspojava terapije:<br />
+            <br />
+            • Suhoća usta i grla: konzumirati hranu kao što je shake, pudding, jogurt, posni sir.<br />
+            • Mučnina i povraćanje: jesti češće i manje porcije slane i blage hrane kao što je slanac, riža, krumpir te hranu koja sadrži đumbir.<br />
+            • Proljev: piti mnogo tekućine, izbjegavati kavu. Jesti meso kao što je piletina te ribu.<br />
+            • Konstipacija: piti mnogo tekućine kao što su prirodni sokovi, limunade te čajevi (bez kofeina). Jesti hranu koja je bogata vlaknima kao što su svjež voće, povrće i cjelovite žitarice.<br />
+        </p>
+        <div class="edu-white-bottom col-12 col-lg-5 text-center mb-1">
+            <p>Edukacijski članak za zdravstvene djelatnike</p>
+            <p>Napomena: Važno je konzultirati se s liječnikom prije uzimanja dodataka prehrani</p>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $('.navbar-container-custom').removeClass('navbar-container-custom').addClass('no-border-nav');
+            $('.main-container').removeClass('bg-image').addClass('bg-about');
+        });
+    </script>
+}
