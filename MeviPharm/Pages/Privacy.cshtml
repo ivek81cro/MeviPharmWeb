@@ -3,6 +3,34 @@
 @{
     ViewData["Title"] = "Privacy Policy";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<div class="container mt-5 mb-5">
+    <h1 class="cookies-more-title mb-5">Više o internet kolačićima (cookies)</h1>
+    <p>
+        HTTP kolačići (cookies) su male datoteke koje internetski preglednici spremaju na naše računalo pri pristupanju
+        pojedinim web-sjedištima kako bi se omogućila dodatna funkcionalnost tih stranica. Najčešći je primjer brži pristup
+        stranicama pamćenjem prijave - kolačić sadrži podatke za prijavu pa se preskaču postupci ponovnog prijavljivanja na
+        stranicu. Dolaze li kolačići od strane reklamnih stranica ili stranica neprovjerenog sadržaja, mogu narušiti
+        korisnikovu privatnost. Kolačići su napravljeni s namjerom da budu jednostavni mehanizam za stranice koje bi ih koristile
+        za pamćenje ključnih informacija (uključujući artikle dodane na popis kupovine u online trgovinama) ili pamćenje korisnikove
+        internetske povijesti (uključujući klikanje nekih gumbova, prijavljivanje na račun, ili stranice koje smo posjetili u povijesti).
+        Također mogu biti korišteni u svrhu pamćenja informacija koje smo unosili u određena polja (imena, adrese, lozinke, broj kreditne kartice...)
+
+        Ostali tipovi kolačića igraju bitnu ulogu u modernom internetu. Vjerojatno najvažniji, autentikacijski kolačići su
+        najčešća metoda korištena od strane servera kako bi znali je li korisnik prijavljen ili nije. Sigurnost autentikacijskog
+        kolačića ovisi o sigurnosti te web-stranice, te o sigurnosti korisnikovog web-preglednika, isto kao i jeli sadržaj kolačića
+        kriptiran ili nije. Ranjivost sigurnosnog sustava može štetiti korisniku ukoliko haker može pročitati njegove informacije
+        zapisane na kolačiću.<br />
+
+        <br />Preuzeto sa <a href="https://hr.wikipedia.org/wiki/HTTP_kola%C4%8Di%C4%87i">https://https://hr.wikipedia.org/wiki/HTTP_kola%C4%8Di%C4%87i</a>
+    </p>
+</div>
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $('.navbar-container-custom').removeClass('navbar-container-custom').addClass('no-border-nav');
+            $('.main-container').removeClass('bg-image').addClass('bg-about');
+        });
+    </script>
+}

@@ -393,12 +393,12 @@ body {
 
 .prod-onvit {
     font-weight: 600;
-    font-size: 4em;
+    font-size: 1.6em;
 }
 
 .prod-immune {
     color: #9ac75e;
-    font-size: 1.3em;
+    font-size: 0.6em;
     margin-left: 3%;
 }
 
@@ -419,12 +419,12 @@ body {
 
     .prod-onvit {
         font-weight: 600;
-        font-size: 4em;
+        font-size: 1.6em;
     }
 
     .prod-immune {
         color: #9ac75e;
-        font-size: 2em;
+        font-size: 0.8em;
         margin-left: 3%;
     }
 }
