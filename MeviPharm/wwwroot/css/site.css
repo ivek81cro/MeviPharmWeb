@@ -320,7 +320,7 @@ body {
 /* Top section
 --------------------- */
 
-.prod a, a:visited, a:hover {
+.prod a, .prod a:visited, prod a:hover {
     text-decoration: none;
     font-weight: 600;
     color: #000;
@@ -458,9 +458,9 @@ body {
     margin: auto;
 }
 
-.prod-second a, a:hover, a:visited{
-    color: #fff;
-}
+    .prod-second a, .prod-second a:hover, .prod-second a:visited {
+        color: #fff;
+    }
 
 .prod-p-green {
     color: #9ac75e;
