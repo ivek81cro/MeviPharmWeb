@@ -1,14 +1,14 @@
 ﻿@page
 @model ProductsModel
 @{
-    ViewData["Title"] = "Products";
+    ViewData["Title"] = "Proizvodi";
 }
 
 
 <div class="container mt-5">
     <div class="row col-12 w-100 m-0 p-0">
         <div class="col-12 col-lg-7 align-content-center prod-img w-100 m-0 p-0">
-            <img src="~/img/bottle.png" class="img-fluid" />
+            <img src="~/img/bottle.png" alt="Image of OnVit immune support bottle" class="img-fluid" />
         </div>
         <div class="col-12 col-lg-4 text-center align-middle">
             <div class="prod-specs green-bg text-light">
@@ -27,9 +27,9 @@
                 </div>
                 <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="">
-                        <a asp-page="/Education/VaznostVitamina">Važnost vitamina i minerala<br />kod onkoloških bolesnika</a>
+                        <a href="/Education/VaznostVitamina">Važnost vitamina i minerala<br />kod onkoloških bolesnika</a>
                         <hr class="w-50" />
-                        <a asp-page="/Education/KoraciDoPlana">Kroz 4 koraka do plana prehrane</a>
+                        <a href="/Education/KoraciDoPlana">Kroz 4 koraka do plana prehrane</a>
                         <hr class="w-50" />
                     </div>
                 </div>
@@ -37,7 +37,7 @@
         </div>
         <div class="prod-second row col-12 w-100 mt-5">
             <div class="col-12 col-lg-6 green-bg text-center text-light w-100 p-3">
-                <p>MEVI&nbsp;Pharm,&nbsp;u&nbsp;suradnji&nbsp;sa&nbsp;Capsumed&nbsp;Pharm</p>
+                <p>MEVI&nbsp;Pharm,&nbsp;u&nbsp;suradnji&nbsp;sa&nbsp;<a href="https://www.capsumed.com/">Capsumed&nbsp;Pharm</a></p>
                 <p>AUSTRIJA,&nbsp;ima&nbsp;misiju&nbsp;proizvodnje&nbsp;inovativnih</p>
                 <p>dodataka&nbsp;prehrani,&nbsp;korištenjem</p>
                 <p>visokokvalitetnih&nbsp;sirovina&nbsp;s&nbsp;ciljem poboljšanja</p>
