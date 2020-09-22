@@ -600,3 +600,10 @@ body {
     border: 1px solid #000;
     padding-top: 5%;
 }
+
+/*Cookie notice
+-------------------------------------------------------------------------------*/
+
+.alert-cookie{
+    background-color: transparent;
+}
