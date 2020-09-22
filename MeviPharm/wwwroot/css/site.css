@@ -152,8 +152,9 @@ body {
 .green-box p {
     font-family: Verdana;
     font-size: 1em;
-    margin-right: 7%;
+    margin: auto;
     line-height: 1.5em;
+    margin-bottom: 2%;
 }
 
 .green-box {
