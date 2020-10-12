@@ -149,6 +149,13 @@ body {
     background-color: #9ac75e;
 }
 
+.green-box {
+    height: 50%;
+    width: 50%;
+    padding: 8% 4% 8% 4%;
+    color: #fff;
+}
+
 .green-box p {
     font-family: Verdana;
     font-size: 1em;
@@ -157,12 +164,11 @@ body {
     margin-bottom: 2%;
 }
 
-.green-box {
-    height: 50%;
-    width: 50%;
-    padding: 8% 4% 8% 4%;
-    color: #fff;
-}
+    .green-box h1 {
+        font-family: Verdana;
+        font-size: 1em;
+        font-weight: 400;
+    }
 
 @media only screen and (max-width: 768px) {
     .green-box-md {
@@ -495,6 +501,7 @@ body {
 
 .edu-behind-number {
     font-size: 1em;
+    font-weight: 400;
     float: left;
     margin-top: 4%;
     margin-left: 2%;
@@ -536,7 +543,6 @@ body {
         height: 50%;
         color: #fff;
         padding: 4% 0% 4% 2%;
-        font-weight: 600;
         background-color: #9ac75e;
         margin-top: 15%;
         z-index: 1;
@@ -585,7 +591,13 @@ body {
 
 .edu-article{
     margin-bottom: 5%;
+    font-family: Verdana;
 }
+
+.edu-article h1{
+    font-size: 1.7em;
+}
+
 .edu-article .edu-green-box {
     margin-top: 5%;
     margin-left: auto;
