@@ -195,6 +195,14 @@ body {
     }
 }
 
+.headline h1, .headline p {
+    display: inline;
+    vertical-align: top;
+    font-family: Verdana, sans-serif;
+    font-size: 1em;
+    line-height: 1em;
+}
+
 /* Transparent-box
 -------------------------------------------------- */
 
