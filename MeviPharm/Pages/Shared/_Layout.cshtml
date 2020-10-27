@@ -40,7 +40,15 @@
                                 <a class="nav-link text-dark" asp-area="" asp-page="/AboutUs">O&nbsp;Nama</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-page="/Products">Proizvodi</a>
+                                <div class="dropdown show">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Products" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Proizvodi
+                                    </a>
+                                    <div class="dropdown-menu text-dark" aria-labelledby="dropdownMenuLink">
+                                        <a class="nav-link text-dark" asp-area="" asp-page="/Products/OnVit">OnVit</a>
+                                        <a class="nav-link text-dark" asp-area="" asp-page="/Products/OpVit">OpVit</a>
+                                    </div>
+                                </div>                                
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-page="/Contact">Kontakt</a>

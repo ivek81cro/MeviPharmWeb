@@ -1,0 +1,137 @@
+﻿@page
+@model MeviPharm.Pages.Products.OnVitModel
+@{
+    ViewData["Title"] = "Proizvodi - OnVit immune support";
+    ViewData["Description"] = "Novi proizvod na tržištu OnVit 60 kapsula, proizveden u suradnji sa Capsumed Pharm Austria.";
+    ViewData["Canon"] = "http://www.mevipharm.hr/Products/OnVit";
+}
+
+<div class="container-fluid p-0 m-0">
+    <div class="text-center">
+        <img src="~/img/onVitBg.png" alt="Picture of woman running with scarf on blue background" class="w-100 p-0 mt-5 onvit-img-lg" />
+        <img src="~/img/onVitBgSm.png" alt="Picture of woman running with scarf on blue background" class="p-0 mt-5 onvit-img-sm" />
+    </div>
+    <div class="prod-name-box">
+        <h1 class="prod-onvit">OnVit</h1>
+        <h2 class="prod-immune">immune support</h2>
+    </div>
+</div>
+<div id="accordion" class="prod-button">
+    <div class="card">
+        <div class="card-header green-bg text-light" id="headingOne">
+            <h5 class="mb-0">
+                <a class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Edukacijski članci
+                </a>
+            </h5>
+        </div>
+
+        <div id="collapseOne" class="collapse hide green-bg" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+                <a href="/Education/VaznostVitamina">Važnost vitamina i minerala<br />kod onkoloških bolesnika</a>
+                <hr class="w-50" />
+                <a href="/Education/KoraciDoPlana">Kroz 4 koraka do plana prehrane</a>
+                <hr class="w-50" />
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mb-5 mt-5 pb-5 border-bottom-on">
+    <div class="row w-100 m-0 p-0">
+        <div class="col-12 col-lg">
+            <img src="~/img/bocicaOnVit.png" alt="Picture of hiker enjoying view on mountain" class="img-fluid img-about w-100 p-0" />
+        </div>
+        <div class="col-12 col-lg">
+            <div class="green-bg green-box-onvit green-box-onvit-padding text-light text-center">
+                <p>
+                    Sadrži vitamine C, A, B6, B12, D3,<br />
+                    folnu kiselinu, željezo i cink koji<br />
+                    doprinose normalnoj funkciji<br />
+                    IMUNOLOŠKOG SUSTAVA<br />
+                </p>
+            </div>
+        </div>
+        <div class="col-12 col-lg text-center">
+            <p class="m-0">
+                Sastojci u preporučenoj dnevnoj dozi (=2 kapsule):
+            </p>
+            <table class="sastav border-green w-100">
+                <tr>
+                    <td>Vitamin A</td>
+                    <td>800 &micro;g</td>
+                    <td>100 % PU*</td>
+                </tr>
+                <tr>
+                    <td>Vitamin C</td>
+                    <td>400 mg</td>
+                    <td>500 % PU*</td>
+                </tr>
+                <tr>
+                    <td>Vitamin D3</td>
+                    <td>37,6 &micro;g</td>
+                    <td>720 % PU*</td>
+                </tr>
+                <tr>
+                    <td>Vitamin B6</td>
+                    <td>4,2 mg</td>
+                    <td>300 % PU*</td>
+                </tr>
+                <tr>
+                    <td>Vitamin B1</td>
+                    <td>3,3 mg</td>
+                    <td>300 % PU*</td>
+                </tr>
+                <tr>
+                    <td>Vitamin B2</td>
+                    <td>4,2 mg</td>
+                    <td>300 % PU*</td>
+                </tr>
+                <tr>
+                    <td>Vitamin E</td>
+                    <td>12,6 mg</td>
+                    <td>101 % PU*</td>
+                </tr>
+                <tr>
+                    <td>Vitamin B12</td>
+                    <td>7,5 &micro;g</td>
+                    <td>300 % PU*</td>
+                </tr>
+                <tr>
+                    <td>Folna kiselina</td>
+                    <td>200 &micro;g</td>
+                    <td>100 % PU*</td>
+                </tr>
+                <tr>
+                    <td>Cink</td>
+                    <td>10 mg</td>
+                    <td>100 % PU*</td>
+                </tr>
+                <tr>
+                    <td>Selen</td>
+                    <td>55 &micro;g</td>
+                    <td>100 % PU*</td>
+                </tr>
+                <tr>
+                    <td>Magnezij</td>
+                    <td>200 mg</td>
+                    <td>53 % PU*</td>
+                </tr>
+                <tr>
+                    <td>Željezo</td>
+                    <td>14 mg</td>
+                    <td>100 % PU*</td>
+                </tr>
+            </table>
+            <p class="m-0">*PU = preporučeni unos</p>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $('.navbar-container-custom').removeClass('navbar-container-custom').addClass('no-border-nav');
+            $('.main-container').removeClass('bg-image').addClass('bg-about');
+        });
+    </script>
+}
