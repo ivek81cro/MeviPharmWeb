@@ -112,6 +112,22 @@ body {
 
 /* Navigation
 -------------------------------------------------- */
+.text-green {
+    color: #9ac75e;
+}
+
+.text-roze {
+    color: #f10685;
+}
+
+.border-green {
+    border: 2px solid #9ac75e;
+}
+
+.border-roze {
+    border: 2px solid #f10685;
+}
+
 .animate {
     animation-duration: 0.5s;
     -webkit-animation-duration: 0.5s;
@@ -505,14 +521,6 @@ body {
 .onvit-img-sm {
     display: normal;
     width: 98%;
-}
-
-.border-green {
-    border: 2px solid #9ac75e;
-}
-
-.border-roze {
-    border: 2px solid #f10685;
 }
 
 .sastav {
