@@ -794,7 +794,7 @@ body {
     }
 
 .edu-article-cijeljenje {
-    margin-top: 0%;
+    margin-top: 0% 0% 0% 0%;
 }
 
 .edu-article-cijeljenje-desni-box {
@@ -811,6 +811,7 @@ body {
     background-color: #ed1385;
     color: #fff;
     text-align: center;
+    font-weight: 600;
 }
 
 .edu-article-razdjelnik {
@@ -831,6 +832,12 @@ body {
 
 .edu-article-wide p::first-letter {
     font-size: 300%;
+}
+
+.edu-cijeljenje-bottom {
+    width: 100%;
+    font-size: 0.8em;
+    color: #000;
 }
 
 @media only screen and (min-width: 992px) {
@@ -855,15 +862,12 @@ body {
 
     .edu-article-cijeljenje-desni-box {
         padding: 0% 0% 0% 0%;
-        margin: 0% 0% 0% 0%;
+        margin: 0% 0% 0% -5%;
     }
 
     .edu-article-cijeljenje-lijevi-box {
-        margin: 0% 0% 0% 0%;
         padding: 0% 0% 0% 0%;
-    }
-
-    .edu-article-cijeljenje-inner {
+        margin: 0% 0% 0% 3%;
     }
 
     .edu-article-razdjelnik {
